@@ -59,38 +59,91 @@ document.addEventListener('keydown', (evento) => {
     switch (evento.code) {
         case 'Numpad7':
             pomBt.dispatchEvent(new Event('click'));
+            pomBt.classList.add('ativa');   
             break;
 
         case 'Numpad8':
             clapBt.dispatchEvent(new Event('click'));
+            clapBt.classList.add('ativa');
             break;
 
         case 'Numpad9':
             timBt.dispatchEvent(new Event('click'));
+            timBt.classList.add('ativa');
             break;  
             
         case 'Numpad4':
             puffBt.dispatchEvent(new Event('click'));
+            puffBt.classList.add('ativa');
             break;  
             
         case 'Numpad5':
             splashBt.dispatchEvent(new Event('click'));
+            splashBt.classList.add('ativa');
             break; 
             
         case 'Numpad6':
             toimBt.dispatchEvent(new Event('click'));
+            toimBt.classList.add('ativa');
             break; 
             
         case 'Numpad1':
             pshBt.dispatchEvent(new Event('click'));
+            pshBt.classList.add('ativa');
             break; 
             
         case 'Numpad2':
             ticBt.dispatchEvent(new Event('click'));
+            ticBt.classList.add('ativa');
             break;  
             
         case 'Numpad3':
             tomBt.dispatchEvent(new Event('click'));
+            tomBt.classList.add('ativa');
+            break;     
+        default:
+            break;
+    }
+})
+
+document.addEventListener('keyup', (evento) => {
+    //console.debug(evento.code);
+
+    switch (evento.code) {
+        case 'Numpad7':
+            pomBt.classList.remove('ativa');
+            break;
+
+        case 'Numpad8':
+            clapBt.classList.remove('ativa');
+            break;
+
+        case 'Numpad9':
+            timBt.classList.remove('ativa');
+            break;  
+            
+        case 'Numpad4':
+            puffBt.classList.remove('ativa');
+            break;  
+            
+        case 'Numpad5':
+            splashBt.classList.remove('ativa');
+            break; 
+            
+        case 'Numpad6':
+            toimBt.classList.remove('ativa');
+            break; 
+            
+        case 'Numpad1':
+            pshBt.classList.remove('ativa');
+            break; 
+            
+        case 'Numpad2':
+            ticBt.classList.remove('ativa');
+            break;  
+            
+        case 'Numpad3':
+            tomBt.classList.remove('ativa');
             break;     
         default:
             break;
